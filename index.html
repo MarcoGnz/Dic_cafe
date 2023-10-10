@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-<html lang="ja">
-
+<html lang="es">
 <head>
     <meta charset="utf-8">
     <title>DIC cafe</title>
 </head>
-
 <body>
-    <header>
-        <nav>
-            <!-- Global Navigation -->
-        </nav>
-        <h1>DIC Coffee</h1>
+    <header id="#top"> <!--Inicio de encabezado -->
+        <a href="index.html"><img src="images/sample_logo_k.png"></a>
+        <nav> <!--Navegacion-->
+            <ul> <!--<ul> ordena de arriba a abajo los elementos <li>-->
+              <a href="index.html"><li>Home</li></a> 
+              <!--<a href=""> permite agregar enlaces url externos e internos en este caso internos para la navegacion-->
+              <a href="#"><li>Menu</li></a>
+              <a href="contact.html"><li>Contact</li></a>
+            </ul>
+          </nav>
+        <h1>DIC Coffee</h1><!--Titulo de encabezado (Es buena preactica hacerlo con un <h1>)-->
     </header>
-    <section>
-        <article>
+    <section><!--Inicio de la seccion que contiene los articulos de la pagina-->
+        <article><!--Primer articulo-->
             <h1>CONCEPT</h1>
             <p>
                 DIC Coffee usa granos de café de Rwanda<strong>"Frijoles DIC"</strong>usando。<br>
@@ -24,49 +28,78 @@
                 Por favor, disfruta。<br>
                 <small>※El café es operado por Daivic Co., Ltd. bajo contrato con la granja.。</small>
             </p>
+            <img src="images/sample_concept.jpg" height="100px">
         </article>
-        <article>
+        <article><!--Segundo articulo Este artiuclo contiene dos secciones-->
             <h1>MENU</h1>
             <section>
                 <h1>Recommended menu</h1>
                 <ul>
-                    <li><strong style="font-size: 27px">Panques de arándanos</strong>
+                    <li><h2></h2><strong style="font-size: 27px">Panques de arándanos</strong></h2>
                         <p>Panqueques cubiertos con arándanos frescos.<br>
                         1.200Gs</p>
+                        <img src="images/sample_pancake1.jpg" height="100px">
                     </li>
-                    <li><strong style="font-size: 27px">Panques de fresa</strong>
+                    <li><h2><strong style="font-size: 27px">Panques de fresa</strong></h2>
                         <p>Disfrute de la colaboración de las fresas y la miel.<br>
                         1.300Gs</p>
+                        <img src="images/sample_pancake2.jpg" height="100px">
                     </li>
                 </ul>
             </section>
             <section>
                 <h1>Coffee menu</h1>
                 <ul>
-                    <li><strong style="font-size: 27px">Café mezclado</strong>
+                    <li><h2>Café mezclado</h2>
                         <p>400Gs</p>
+                        <img src="images/sample_cafe1.jpg" height="100px">
                     </li>
-                    <li><strong style="font-size: 27px">Arte Latte</strong>
+                    <li><h2>Arte Latte</h2>
                         <p>500Gs</p>
+                        <img src="images/sample_cafe2.jpg" height="100px">
                     </li>
-                    <li><strong style="font-size: 27px">Café con leche</strong>
+                    <li><h2>>Café con leche</h2>
                         <p>450Gs</p>
+                        <img src="images/sample_cafe3.jpg" height="100px">
                     </li>
-                    <li><strong style="font-size: 27px">Café helado</strong>
+                    <li><h2>Café helado</h2>
                         <p>350Gs</p>
+                        <img src="images/sample_cafe4.jpg" height="100px">
                     </li>
                 </ul>
             </section>
         </article>
-        <article>
+        <article><!--Tercer articulo-->
             <h1>ACCESS</h1>
+            <dl>
+                <dt>horario de apertura (de una tienda, restaurante, etc.)</dt>
+                <dd>10:00 - 19:00<br>Cerrado los jueves</dd>
+              </dl>
+              <dl>
+                <dt>Dirección</dt>
+                <dd>
+                  Oba Building A, 28-4, Maruyama-cho, Shibuya-ku, Tokio 150-0044, Japón<br>
+                  TEL:03-5459-1808
+                </dd>
+              </dl>
+              <!--iframe es para pegar una ubicacionde google maps. Se copia el enlace directamente de google maps-->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d529.1112083856162!2d29.98381513346934!3d36.258715876075584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c1f33fb007ffeb%3A0xf99a1032a6f73de1!2sLycian%20Rock-Cut%20Tombs%20of%20Myra!5e0!3m2!1ses-419!2spy!4v1696978502419!5m2!1ses-419!2spy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <!--iframe tambien sirve para videos youtube-->
         </article>
     </section>
     <footer>
         <nav>
-            <!-- navigation -->
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="#"><li>Menu</li></a>
+                <a href="contact.html"><li>Contact</li></a>
+              </ul>
+              <a href="index.html"><!--Permite agragar un enlace a la imagen-->
+              <img src="images/sample_logo_w.png">
+              </a>
+              <span>&copy; DIVIC Corp. All RIGHTS RESERVED.</span>
         </nav>
     </footer>
+    <a href="#top">Volver ARRIBA</a> <!--Permite volver donde se coloco la id="#top" -->
 </body>
-
 </html>
