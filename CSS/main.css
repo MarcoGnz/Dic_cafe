@@ -19,8 +19,19 @@ h1,p { //aplica solo a los elementos  <h1> y <p>
   color: red;
 }
 
-article p { aplica a todos los <p> que estan denro de <article>
+article p { //aplica a todos los <p> que estan denro de <article>
   color: red;
 }
 
+.main p { //aplica a todos los elementos <p> que estan dentro de los elementos con id="main"
+  color: red;
+}
+
+article > p { aplica solo a los elemntos que estan de bajo de article no asi a los subelemntos que estan dentro de los elemnts dentro de article
+  color: red;
+  //Tambien se puede espesificar la gerarquia con "artículo > div > p"
+}
+
+ //Todas todos estos metodos para aplicar estilo tienen un orden de prioridad
+ Esto se puede consultar en google en caso que lo necesites 
 */
