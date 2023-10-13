@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+html {
+    /*Aplica fondo a todo el doc html*/
+    background-color: rgb(150, 101, 101);
+}
+
+/*
+
+h1,p { //aplica solo a los elementos  <h1> y <p>
+    font-size: 10px;
+}
+
+* { //aplica a todos los elementos
+    font-size: 10px;
+}
+
+.title, p { //aplica a las id:"title" y a <p>
+  color: red;
+}
+
+article p { aplica a todos los <p> que estan denro de <article>
+  color: red;
+}
+
+*/
