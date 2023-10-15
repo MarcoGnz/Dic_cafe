@@ -1,8 +1,8 @@
 @charset "utf-8";
 
 html {
-    /*Aplica fondo a todo el doc html*/
-    background-color: rgb(150, 101, 101);
+  /*Aplica fondo a todo el doc html*/
+  background-color: rgb(248, 248, 248);
 }
 
 /*
@@ -23,7 +23,7 @@ article p { //aplica a todos los <p> que estan denro de <article>
   color: red;
 }
 
-.main p { //aplica a todos los elementos <p> que estan dentro de los elementos con id="main"
+.main p { //aplica a todos los elementos <p> que estan dentro de los elementos con class= "main"
   color: red;
 }
 
@@ -35,3 +35,89 @@ article > p { aplica solo a los elemntos que estan de bajo de article no asi a l
  //Todas todos estos metodos para aplicar estilo tienen un orden de prioridad
  Esto se puede consultar en google en caso que lo necesites 
 */
+
+#top {
+  background-color: #23282c;
+}
+
+.section_inner {
+  /*Margen para los articulos (arriba, lados y abajo)*/
+  padding: 50px 10% 30px;
+  
+}
+
+.key {
+  height: 500px;
+  /*background-position / background-size / background-repeat / background-image */
+  background: center / cover no-repeat url("../images/sample_key.jpg");
+
+  margin-top: 0; /* Elimina el margen superior del elemento con clase "key" */
+
+  font-family: 'Josefin Sans', sans-serif; /*fuente extraida de google fonts*/
+  font-weight: bold; /*aplica negrita*/
+}
+
+.key h1 {
+  font-size: 2.5rem;
+  /*Dimencion del fondo*/
+}
+
+.section_title {
+  font-family: 'Open Sans', sans-serif;
+  /*fuente extraida de google fonts*/
+  font-weight: bold;
+  text-align: center;
+  /*Centra el texto*/
+  margin-bottom: 50px;
+  /*Espacio en blanco debajo del elemto en donde se aplica este margen*/
+}
+
+.menu_title {
+  display: inline-block;
+  /*hace que el elemento sea un bloque con propiedades de bloque, pero se muestra en la misma línea que otros elementos.*/
+  font-family: 'Open Sans', sans-serif;
+  /*fuente extraida de google fonts*/
+  font-size: 1.5rem;
+  /*tamaño de la fuente (rem: unidad relativa del elemnto padre)*/
+  color: #42210b;
+  border-bottom: solid #42210b 1px;
+  /*borde en la perte inferior del elemtno*/
+  margin-bottom: 20px;
+  /*margin inferior*/
+}
+
+.center {
+  text-align: center;
+  /*centra el texto*/
+}
+
+/*
+img {
+  width: 500px;
+  height: 250px;
+  background: pink;
+  object-fit: contain; //La imagen se redimenciona para que sea visible en su totalidad
+}*/
+
+.coffee_menu_image {
+  width: 20%;
+  border-radius: 50%;
+  /*Da un borde de 50% para formar un circulo perfecto. Se puede ajustar para lograr otras formas con bordes redondeados*/
+}
+
+.header_nav {
+  background: linear-gradient(90deg, #4d1717 20%, rgba(23, 2, 2, 0.6) 60%); /*Establece un fondo negro con trasnparencia de 60%*/
+
+  margin-bottom: 0; /* Elimina el margen inferior de la navegación */
+}
+
+.global_nav_item {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+.global_nav_item:hover {
+  background: #fff;
+  color: #42210b;
+}

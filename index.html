@@ -1,29 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="utf-8">
-    <title>DIC cafe</title>.
+    <title>DIC cafe</title>
     <!--nomalize.css Elimimna los css por defectos que viene con HTML-->
     <link rel="stylesheet" href="CSS/normalize.css">
     <!--LLama a los atrubutos style del main.css-->
     <link href="CSS/main.css" rel="stylesheet">
+
+    <!--Link de fientes extraido de google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,200&family=Open+Sans:ital@1&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header id="#top"> <!--Inicio de encabezado -->
-        <a href="index.html"><img src="images/sample_logo_k.png"></a>
-        <nav> <!--Navegacion-->
+        <nav class="header_nav"><!--Navegacion-->
+            <a href="index.html"><img src="images/sample_logo_k.png"></a>
             <ul> <!--<ul> ordena de arriba a abajo los elementos <li>-->
-              <a href="index.html"><li>Home</li></a> 
-              <!--<a href=""> permite agregar enlaces url externos e internos en este caso internos para la navegacion-->
-              <a href="#"><li>Menu</li></a>
-              <a href="contact.html"><li>Contact</li></a>
+                <a href="index.html" class="global_nav_item"><li>Home</li></a>
+                <!--<a href=""> permite agregar enlaces url externos e internos en este caso internos para la navegacion-->
+                <a href="#" class="global_nav_item"><li>Menu</li></a>
+                <a href="contact.html" class="global_nav_item"><li>Contact</li></a>
             </ul>
-          </nav>
-        <h1>DIC Coffee</h1><!--Titulo de encabezado (Es buena preactica hacerlo con un <h1>)-->
+        </nav>
+        <div class="key section_inner">
+            <h1>DIC Coffee</h1><!--Titulo de encabezado (Es buena preactica hacerlo con un <h1>)-->
+            <p>natural organic cafe</p>
+        </div>
     </header>
     <section><!--Inicio de la seccion que contiene los articulos de la pagina-->
-        <article><!--Primer articulo-->
-            <h1>CONCEPT</h1>
+        <article class="section_inner"><!--Primer articulo-->
+            <div class="section_title">
+                <h1>CONCEPT</h1>
+                <p>El compromiso de DIC Coffee</p>
+            </div>
             <p>
                 DIC Coffee usa granos de café de Rwanda<strong>"Frijoles DIC"</strong>usando。<br>
                 Adquirido de caficultores contratados directamente。<br>
@@ -32,78 +47,102 @@
                 Por favor, disfruta。<br>
                 <small>※El café es operado por Daivic Co., Ltd. bajo contrato con la granja.。</small>
             </p>
-            <img src="images/sample_concept.jpg" height="100px">
+            <img src="images/sample_concept.jpg" width="300rem">
         </article>
-        <article><!--Segundo articulo Este artiuclo contiene dos secciones-->
-            <h1>MENU</h1>
+        <article class="section_inner"><!--Segundo articulo Este artiuclo contiene dos secciones-->
+            <h1 class="section_title">MENU</h1>
             <section>
-                <h1>Recommended menu</h1>
+                <div class="center">
+                    <h1 class="menu_title">Recommended menu</h1>
+                </div>
                 <ul>
-                    <li><h2><strong style="font-size: 27px">Panques de arándanos</strong></h2>
+                    <li>
+                        <h2><strong style="font-size: 27px">Panques de arándanos</strong></h2>
                         <p>Panqueques cubiertos con arándanos frescos.<br>
-                        1.200Gs</p>
-                        <img src="images/sample_pancake1.jpg" height="100px">
+                            1.200Gs</p>
+                        <img src="images/sample_pancake1.jpg" width="200rem">
                     </li>
-                    <li><h2><strong style="font-size: 27px">Panques de fresa</strong></h2>
+                    <li>
+                        <h2><strong style="font-size: 27px">Panques de fresa</strong></h2>
                         <p>Disfrute de la colaboración de las fresas y la miel.<br>
-                        1.300Gs</p>
-                        <img src="images/sample_pancake2.jpg" height="100px">
+                            1.300Gs</p>
+                        <img src="images/sample_pancake2.jpg" width="200rem">
                     </li>
                 </ul>
             </section>
             <section>
-                <h1>Coffee menu</h1>
+                <div class="center">
+                    <h1 class="menu_title">Coffee menu</h1>
+                </div>
                 <ul>
-                    <li><h2>Café mezclado</h2>
+                    <li>
+                        <h2>Café mezclado</h2>
                         <p>400Gs</p>
-                        <img src="images/sample_cafe1.jpg" height="100px">
+                        <img src="images/sample_cafe1.jpg" class="coffee_menu_image">
                     </li>
-                    <li><h2>Arte Latte</h2>
+                    <li>
+                        <h2>Arte Latte</h2>
                         <p>500Gs</p>
-                        <img src="images/sample_cafe2.jpg" height="100px">
+                        <img src="images/sample_cafe2.jpg" class="coffee_menu_image">
                     </li>
-                    <li><h2>Café con leche</h2>
+                    <li>
+                        <h2>Café con leche</h2>
                         <p>450Gs</p>
-                        <img src="images/sample_cafe3.jpg" height="100px">
+                        <img src="images/sample_cafe3.jpg" class="coffee_menu_image">
                     </li>
-                    <li><h2>Café helado</h2>
+                    <li>
+                        <h2>Café helado</h2>
                         <p>350Gs</p>
-                        <img src="images/sample_cafe4.jpg" height="100px">
+                        <img src="images/sample_cafe4.jpg" class="coffee_menu_image">
                     </li>
                 </ul>
             </section>
         </article>
-        <article><!--Tercer articulo-->
-            <h1>ACCESS</h1>
-            <dl>
-                <dt>horario de apertura (de una tienda, restaurante, etc.)</dt>
-                <dd>10:00 - 19:00<br>Cerrado los jueves</dd>
-              </dl>
-              <dl>
-                <dt>Dirección</dt>
-                <dd>
-                  Oba Building A, 28-4, Maruyama-cho, Shibuya-ku, Tokio 150-0044, Japón<br>
-                  TEL:03-5459-1808
-                </dd>
-              </dl>
-              <!--iframe es para pegar una ubicacionde google maps. Se copia el enlace directamente de google maps-->
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d529.1112083856162!2d29.98381513346934!3d36.258715876075584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c1f33fb007ffeb%3A0xf99a1032a6f73de1!2sLycian%20Rock-Cut%20Tombs%20of%20Myra!5e0!3m2!1ses-419!2spy!4v1696978502419!5m2!1ses-419!2spy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              <!--iframe tambien sirve para videos youtube-->
-        </article>
+        <article class="section_inner"><!--Tercer articulo-->
+            <article class="section_inner">
+                <div class="section_title">
+                    <h1>ACCESS</h1>
+                    <p>Información de la tienda</p>
+                </div>
+                <dl>
+                    <dt>horario de apertura (de una tienda, restaurante, etc.)</dt>
+                    <dd>10:00 - 19:00<br>Cerrado los jueves</dd>
+                </dl>
+                <dl>
+                    <dt>Dirección</dt>
+                    <dd>
+                        Oba Building A, 28-4, Maruyama-cho, Shibuya-ku, Tokio 150-0044, Japón<br>
+                        TEL:03-5459-1808
+                    </dd>
+                </dl>
+                <!--iframe es para pegar una ubicacionde google maps. Se copia el enlace directamente de google maps-->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d529.1112083856162!2d29.98381513346934!3d36.258715876075584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c1f33fb007ffeb%3A0xf99a1032a6f73de1!2sLycian%20Rock-Cut%20Tombs%20of%20Myra!5e0!3m2!1ses-419!2spy!4v1696978502419!5m2!1ses-419!2spy"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!--iframe tambien sirve para videos youtube-->
+            </article>
     </section>
     <footer>
         <nav>
             <ul>
-                <a href="index.html"><li>Home</li></a>
-                <a href="#"><li>Menu</li></a>
-                <a href="contact.html"><li>Contact</li></a>
-              </ul>
-              <a href="index.html"><!--Permite agragar un enlace a la imagen-->
-              <img src="images/sample_logo_w.png">
-              </a>
-              <span>&copy; DIVIC Corp. All RIGHTS RESERVED.</span>
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="#">
+                    <li>Menu</li>
+                </a>
+                <a href="contact.html">
+                    <li>Contact</li>
+                </a>
+            </ul>
+            <a href="index.html"><!--Permite agragar un enlace a la imagen-->
+                <img src="images/sample_logo_w.png">
+            </a>
+            <span>&copy; DIVIC Corp. All RIGHTS RESERVED.</span>
         </nav>
     </footer>
     <a href="#top">Volver ARRIBA</a> <!--Permite volver donde se coloco la id="#top" -->
 </body>
+
 </html>
