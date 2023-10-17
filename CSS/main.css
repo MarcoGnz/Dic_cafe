@@ -43,6 +43,7 @@ article > p { aplica solo a los elemntos que estan de bajo de article no asi a l
 .section_inner {
   /*Margen para los articulos (arriba, lados y abajo)*/
   padding: 50px 10% 30px;
+  color: #680000;
   
 }
 
@@ -106,18 +107,44 @@ img {
 }
 
 .header_nav {
-  background: linear-gradient(90deg, #4d1717 20%, rgba(23, 2, 2, 0.6) 60%); /*Establece un fondo negro con trasnparencia de 60%*/
+  background: linear-gradient(90deg, #4d1717 20%, rgba(112, 62, 62, 0.6) 60%); /*Establece un fondo negro con trasnparencia de 60%*/
+  display: flex;
 
-  margin-bottom: 0; /* Elimina el margen inferior de la navegación */
+  height: 60px;
+  justify-content: space-between;/* distribuye los elementos horizontalmente para que haya espacio igual entre ellos, lo que coloca el primer elemento al comienzo y el último al final.*/
+  align-items: stretch;
+
+  position: fixed;/*fija el elemento en una posición específica en la ventana del navegador, de modo que permanece visible incluso cuando se desplaza la página.*/
+  top: 0;/*coloca el elemento fijo en la parte superior de la ventana del navegador.*/
+  width: 100%;/* hace que el ancho del elemento fijo sea igual al 100% del ancho de la ventana, lo que lo estira para que cubra toda la pantalla horizontalmente.*/
 }
 
 .global_nav_item {
   color: #fff;
   text-decoration: none;
-  display: block;
+  
+  display: flex;
+  align-items: center;/*se usa en un contenedor flex para alinear verticalmente los elementos en el centro del contenedor.*/
+  padding: 0 20px;/*establece un relleno de 0 píxeles en la parte superior e inferior y 20 píxeles en los lados izquierdo y derecho del elemento.*/
 }
 
-.global_nav_item:hover {
+.global_nav_item:hover {/*aplica estilos cuando el cursor pasa sobre elementos con la clase */
   background: #fff;
   color: #42210b;
+}
+
+.global_nav {
+  display: flex; /*permite crear diseños flexibles y controlar la distribución y alineación de elementos en un contenedor.*/
+  list-style: none;/* Elimina los puntos de viñeta */
+
+  align-items: stretch;/*estira elementos verticalmente para igualar su altura dentro de un contenedor flex.*/
+}
+
+.logo {
+  width: 120px; /*encho del link. espacio donde se encuentra el logo */
+  display: flex;/*Pripiedades flex*/
+  align-items: center;/*Centralizado del item*/
+}
+.logo img{
+  width: 100%; /*ancho de la imagen logo*/
 }
