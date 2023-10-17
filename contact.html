@@ -1,40 +1,106 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="utf-8">
     <title>DIC cafe</title>
+    <!--nomalize.css Elimimna los css por defectos que viene con HTML-->
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <!--LLama a los atrubutos style del main.css-->
+    <link href="CSS/main.css" rel="stylesheet">
+
+    <!--Link de fientes extraido de google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,200&family=Open+Sans:ital@1&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <a href="index.html">
-                    <li>Home</li>
+    <header id="top"> <!--Inicio de encabezado -->
+        <nav class="header_nav"><!--Navegacion-->
+
+            <a href="index.html" class="logo"><img src="images/sample_logo_k.png"></a>
+
+            <ul class="global_nav"> <!--<ul> ordena de arriba a abajo los elementos <li>-->
+                <a href="index.html" class="global_nav_item">
+                    <li> Home</li>
                 </a>
-                <a href="#">
+                <!--<a href=""> permite agregar enlaces url externos e internos en este caso internos para la navegacion-->
+                <a href="#" class="global_nav_item">
                     <li>Menu</li>
                 </a>
-                <a href="contact.html">
+                <a href="contact.html" class="global_nav_item">
                     <li>Contact</li>
                 </a>
             </ul>
         </nav>
-        <h1>DIC Coffee</h1>
     </header>
-    <section>
-        <article>
-            <h1>CONCEPT</h1>
-            <p>DIC Coffee utiliza granos de café de Ruanda llamados DIC Beans.<br>
-                Compramos directamente a los productores de café con los que tenemos contrato.<br>
-                Esta taza tiene una acidez y riqueza bien equilibradas, con un toque de dulzura afrutada.
-                Por favor disfruta de tu taza favorita.<br>
-                *DIC Coffee es operado por DIVE INTO CODE Co., Ltd. bajo contrato con la finca.
-            </p>
-            <img src="images/sample_concept.jpg" width="170px" height="170px" ><br> <!--Permite agregar imagenes -->
-        </article>
+    <section class="section_inner">
+        <div class="section_title">
+            <h1>CONTACT</h1>
+            <p>Contáctanos</p>
+        </div>
+        <form action="#" method="POST">
+            <table class="contact">
+                <tr class="contact_line">
+                    <td class="contact_sign"><label for="name">Nombre</label></td>
+                    <td class="contact_input"><input type="text" name="name" id="name"></td>
+                </tr>
+                <tr class="contact_line">
+                    <td class="contact_sign"><label for="phonenumber">Datos de contacto</label></td>
+                    <td class="contact_input"><input type="tel" name="phonenumber" id="phonenumber"></td>
+                </tr>
+                <tr class="contact_line">
+                    <td class="contact_sign"><label for="region">Región de residencia</label></td>
+                    <td>
+                        <select id="region">
+                            <option value="0">Por favor, seleccione.</option>
+                            <option value="1">Hokkaido</option>
+                            <option value="2">CDE</option>
+                            <option value="3">Itakyry</option>
+                            <option value="4">Coronel Oviedo</option>
+                            <option value="5">Santa Rita</option>
+                            <option value="6">Curuguaty</option>
+                            <option value="7">Asuncion</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="contact_content">
+                    <td class="contact_sign"><label for="content">Contenido</label></td>
+                    <td class="contact_input"><textarea name="content" id="content"></textarea></td>
+                </tr>
+            </table>
+            <div class="contact_btn_area">
+                <button type="reset" class="contact_btn reset_btn">reiniciar</button>
+                <button type="submit" class="contact_btn submit_btn">Enviar</button>
+            </div>
+        </form>
     </section>
-    <!--target="_blank" hace que el enlace se habra en otra ventana-->
-    <a href="https://gsnedders.html5.org/outliner/" target="_blank" rel="noreferrer">HTML 5
-        Outliner</a><!--rel="noreferrer" no afecta a la visualizacion, sirve para dar centido al enlace-->
+
+    <footer class="footer">
+        <nav>
+            <ul class="footer_nav">
+                <a href="index.html" class="footer_nav_item">
+                    <li>Home</li>
+                </a>
+                <a href="blueberry_pancakes.html" class="footer_nav_item">
+                    <li>Menu</li>
+                </a>
+                <a href="contact.html" class="footer_nav_item">
+                    <li>Contact</li>
+                </a>
+                <a href="index.html" class="footer_nav_item">
+                    <li>
+                        <img src="images/sample_logo_w.png" class="footer_logo">
+                    </li>
+                </a>
+            </ul>
+        </nav>
+        <p class="footer_right">© DIVIC Corp. All RIGHTS RESERVED.</p>
+    </footer>
+    <a href="#top">Volver ARRIBA</a> <!--Permite volver donde se coloco la id="#top" -->
 </body>
+
 </html>

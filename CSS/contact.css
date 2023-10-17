@@ -1,0 +1,70 @@
+@charset "utf-8"; /* Definición de la codificación de caracteres */
+
+.sub_header {
+  padding-bottom: 100px; /* Agrega relleno inferior de 100px para elementos con clase "sub_header" */
+}
+
+.contact {
+  width: 100%; /* Establece un ancho del 100% para elementos con clase "contact" */
+  margin-bottom: 30px; /* Agrega un margen inferior de 30px */
+}
+
+.contact_line {
+  height: 50px;
+  line-height: 50px; /* Establece la altura y la línea de altura para elementos con clase "contact_line" */
+}
+
+.contact_sign {
+  width: 25%; /* Establece un ancho del 25% */
+  background: #beb9b7; /* Establece un fondo gris claro */
+  border: solid 1px #beb9b7; /* Establece un borde de 1px */
+  text-align: left; /* Alinea el texto a la izquierda */
+  padding: 0 20px; /* Agrega relleno de 0 en la parte superior e inferior y 20px a la izquierda y derecha */
+}
+
+.contact_input {
+  width: 75%; /* Establece un ancho del 75% */
+  border: solid 1px #beb9b7; /* Establece un borde de 1px con el mismo color que "contact_sign" */
+}
+
+.contact_content {
+  height: 100px; /* Establece la altura de 100px para elementos con clase "contact_content" */
+}
+
+.contact_input input, select, textarea {
+  border: none; /* Elimina el borde de los elementos de entrada, select y textarea */
+  width: 99%; /* Establece un ancho del 99% para estos elementos */
+}
+
+.contact_input input, select {
+  height: 50px; /* Establece una altura de 50px para elementos de entrada y select */
+}
+
+.contact_input textarea {
+  height: 100px; /* Establece una altura de 100px para elementos textarea */
+}
+
+.contact_btn_area {
+  display: flex; /* Utiliza flexbox para alinear elementos secundarios */
+  justify-content: center; /* Centra los elementos secundarios horizontalmente */
+  padding: 20px 0; /* Agrega relleno de 20px en la parte superior e inferior */
+}
+
+.contact_btn {
+  padding: 10px 20px; /* Agrega relleno de 10px arriba y abajo, 20px izquierda y derecha */
+  border: none; /* Elimina el borde */
+  border-radius: 5px; /* Agrega un borde redondeado de 5px */
+}
+
+.contact_btn + .contact_btn{
+  margin-left: 10px; /* Agrega un margen izquierdo de 10px a los elementos de clase "contact_btn" adyacentes */
+}
+
+.submit_btn {
+  background: #9852a5; /* Establece un fondo de color morado */
+  color: #fff; /* Establece el color del texto en blanco */
+}
+
+reset_btn {
+  background: #e6e6e6; /* Establece un fondo de color gris claro */
+}
