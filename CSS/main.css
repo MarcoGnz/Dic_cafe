@@ -182,7 +182,7 @@ article > p { aplica solo a los elemntos que estan de bajo de article no asi a l
   flex-wrap: wrap; /* Permitir que los elementos se envuelvan a la siguiente fila si no caben */
   justify-content: space-between; /* Distribuir uniformemente los elementos a lo largo del contenedor */
   list-style: none; /* Eliminar los marcadores de lista predeterminados */
-  padding: 0; /* Eliminar relleno interno */
+  padding: 20px; /* Eliminar relleno interno */
   background: white; /* Establecer un fondo blanco */
   margin: 20px;/* Agregar un margen exterior de 20px */
 }
